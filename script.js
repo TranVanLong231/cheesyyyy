@@ -78,11 +78,20 @@ class Paper {
     },false);
   }
 }
+
+const urlParams =window.location.search.split('?')[2].split('=')[1];
+console.log(urlParams)
+urlParams.split('%0A').reverse().forEach(e=>{
+  document.body.innerHTML+=`
+    <div class='paper'>
+      <p class="p1">${decodeURIComponent(e)}</p>
+    </div>
+  `
+})
+
 const papers = Array.from(document.querySelectorAll('.paper'));
 papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
 });
-const urlParams = new URLSearchParams('?'+window.location.search.split('?')[2]);
-const myParam = urlParams.get('myParam');
-console.log(myParam)
+
