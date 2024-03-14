@@ -83,6 +83,6 @@ papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
 });
-const urlParams = new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams('?'+window.location.search.split('?')[2]);
 const myParam = urlParams.get('myParam');
 console.log(myParam)
