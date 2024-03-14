@@ -23,7 +23,7 @@
             document.getElementById("button-blue").addEventListener('click',(e)=>{
                 e.preventDefault();
                console.log( document.getElementById("comment").value);
-               var query = 'https://html-preview.github.io/?url=https://github.com/TranVanLong231/cheesyyyy/blob/form/index.html'
+               var query = 'https://html-preview.github.io/?url=https://github.com/TranVanLong231/cheesyyyy/blob/dynamic/index.html'
                query+= '?words='+encodeURIComponent('Kéo tờ giấy ra!')+'%0A'+encodeURIComponent(document.getElementById("comment").value);
                window.location.href=query
             })
