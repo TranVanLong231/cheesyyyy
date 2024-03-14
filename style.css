@@ -3,6 +3,12 @@
   font-family: myFirstFont;
   src: url(OldBookshopHk-yAX5.ttf);
 }
+:root, html, body {margin: 0;  overflow: hidden;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;}
 body {
   height: 100vh;
   display: flex;
@@ -70,4 +76,12 @@ p {
   opacity: 0.75;
   user-select: none;
   
+}
+canvas {
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
 }
