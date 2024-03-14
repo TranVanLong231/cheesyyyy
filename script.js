@@ -1,3 +1,5 @@
+
+
 let highestZ = 1;
 class Paper {
   holdingPaper = false;
@@ -16,6 +18,7 @@ class Paper {
   initPos=false;
   init(paper) {
     document.addEventListener('touchmove', (e) => {
+      e.preventDefault();
       if(this.holdingPaper) {
       //if(!this.rotating) {
         this.mouseX = e.changedTouches[0].clientX;

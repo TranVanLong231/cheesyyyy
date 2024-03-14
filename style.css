@@ -3,12 +3,10 @@
   font-family: myFirstFont;
   src: url(OldBookshopHk-yAX5.ttf);
 }
-:root, html, body {margin: 0;  overflow: hidden;
-  position: absolute;
-  top:0;
-  right: 0;
-  bottom: 0;
-  left: 0;}
+:root, html, body { height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;}
 body {
   height: 100vh;
   display: flex;
